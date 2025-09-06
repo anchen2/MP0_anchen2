@@ -1,0 +1,16 @@
+@media (min-width: 300px) {
+    .card {
+        width: 80%;
+        padding: 5%;
+    }
+    .content {
+        flex-direction: column;
+
+    }
+
+    .leftside, .rightside {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+}
