@@ -1,4 +1,4 @@
-# Simple workflow for deploying static HTML/CSS to GitHub Pages
+# Workflow for deploying static HTML/CSS to GitHub Pages
 name: Deploy static site to Pages
 
 on:
@@ -22,10 +22,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Upload artifact
+      - name: Upload static files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .  # 👈 uploads the whole repo (your HTML/CSS files)
+          name: github-pages   # 👈 matches what Pages expects
+          path: .              # 👈 uploads your repo’s HTML/CSS files
 
       - name: Deploy to GitHub Pages
         id: deployment
